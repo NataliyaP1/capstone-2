@@ -1,0 +1,55 @@
+#container1{
+
+    size: 3rem;
+    background-color: rgba(255, 255, 254, 0.089);
+    margin:5rem;
+    padding:2rem;
+    border-radius: 5px;
+    font-family: "";
+    color:rgb(255, 255, 255);
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Abril Fatface", serif;
+    font-weight: 100;
+}
+
+
+.filters{
+color: rgb(255, 255, 255);
+font-size: 1.5rem;
+font-family: "Abril Fatface", serif;
+    font-weight: 100;
+}
+
+
+#results{
+    padding:50px;
+    text-align:calc(3%);
+    color:white;
+    background-color:rgba(255, 255, 254, 0.089) ;
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    align-self: center;
+    margin:80px;
+}
+
+table{
+    border-collapse: collapse;
+
+}
+
+#locations, #parkType{
+    size:300px;
+}
+
+select {
+    background-color: rgba(184, 222, 255, 0.192);
+    border:none;
+    border-radius: 20px;
+    height:20px;
+    margin:10px;
+    color:rgb(255, 255, 255);
+    background: rgba(0, 0, 0, 0.418);
+}

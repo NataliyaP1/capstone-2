@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Parks</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <script src="./scripts/main.js"></script>
+    <link rel="stylesheet" href="./styles/parks.css">
+    <script src="./scripts/parkTypeData.js"></script>
+    <script src="./scripts/nationalParkData.js"></script>
+    <script src="./scripts/locationData.js"></script>
+    <script src="./scripts/parks.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="offScreenMenu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="parks.html">Parks</a></li>
+          <li><a href="mountains.html">Mountains</a></li>
+        </ul>
+      </div>
+      <nav>
+        <img src="https://th.bing.com/th/id/R.4bd53d37d025a0f4f0b40715c4af44fb?rik=YRZP%2fBZWSLq1Wg&riu=http%3a%2f%2fpngimg.com%2fuploads%2fmountain%2fmountain_PNG22.png&ehk=jpN25eGwUZfaQ7tyLCywuHxiHkzHRZ5TTteNHrIW598%3d&risl=&pid=ImgRaw&r=0" alt="" id="logo">
+        <h1>TrailBlazer</h1>
+        <div class="hamMenu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+    </nav>
+    <h2>National Parks</h2>
+    <div id="container1"> 
+    <h3 style="font-weight: 100;">Search By : </h3>
+    <label><input type="radio" name="searchBy" id="locationRadio"> Location: State</label>
+    <label><input type="radio" name="searchBy" id="parkTypeRadio"> Park Type</label>
+    <div class="filters">
+        <label id="locationLabel">Location:<select name="locations" id="locations"><option>
+            -Select Location-
+        </option></select></label>
+        <label id="parkTypeLabel">Park Type:<select name="parkType" id="parkType"><option>
+             -Select Park Type-
+        </option></select></label>
+    </div>
+</div>
+
+<div id="results"></div>
+
+    
+
+<br>
+<br>
+<br>
+    <footer>&copy;2024</footer>
+</body>
+<script>
+
+
+
+
+</script>
+</html>

@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+a {
+    color: white;
+    font-family: "Abril Fatface", serif;
+    font-weight: 200;
+}
+a:visited {
+    color: white;
+}
+a:hover {
+    color: #b87c23;
+}
+
+body {
+    background-color: rgb(37, 22, 36);
+    font-family: sans-serif;
+}
+
+
+
+/* off-screen-menu */
+.offScreenMenu {
+    background-color:  rgba(0, 0, 0, 0.384);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.offScreenMenu.active {
+    right: 0;
+}
+
+
+
+/* nav */
+nav {
+    padding: 1rem;
+    display: flex;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0),rgba(0, 0, 0, 0.863) 100%);
+}
+
+
+
+/* ham menu */
+.hamMenu {
+    height: 50px;
+    width: 40px;
+    margin-left: auto;
+    position: relative;
+}
+.hamMenu span {
+    height: 5px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 35px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    transition: .3s ease;
+}
+.hamMenu span:nth-child(1) {
+    top: 25%;
+}
+.hamMenu span:nth-child(3) {
+    top: 75%;
+}
+.hamMenu.active span {
+    background-color: rgb(255, 255, 255);
+}
+.hamMenu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+.hamMenu.active span:nth-child(2) {
+    opacity: 0;
+}
+.hamMenu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+/*end of ham menu*/
+
+  footer{
+    background-color: rgba(44, 22, 22, 0.911);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    bottom: 0;
+    height:50px;
+    position:static;
+    width: 100%;
+    padding:7rem
+  }
+  h1{
+    font-size: 3rem;
+    color: rgb(255, 255, 255);
+    font-family: "Abril Fatface", serif;
+  font-weight: 200;
+  }
+
+  h2{
+    font-size: 2.5rem;
+    font-family: "Abril Fatface", serif;
+    font-weight: 200;
+    color: white;
+    margin-left: 70px;
+    text-decoration: 2px underline;
+  }
+  
+#logo{
+    height: 55px;
+    position: static;
+    float:left;
+}
