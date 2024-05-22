@@ -1,28 +1,6 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
 
-// for(mountain of mountainsArray){
-//     const name = mountain.name;
-//     const o = option(name)
-//     mountainList.appendChild(o);
-// }
-
-// mountainList.addEventListener("change", e=>{
-//     const mountain = mountainsArray[mountainList.selectedIndex - 1];
-//     mountainResults.innerHTML =`
-
-//     <h1>${mountain.name}</h1>
-//     ${mountain.elevation}
-//     ${mountain.effort}
-// <p>${mountain.desc}</p>
-// <img src="./images/${mountain.img}">
-//     `;
-
-// });
-
-
-    // mountainsArray.forEach(m => mountainList.appendChild(option(m.name)));
-
     for (mountain of mountainsArray) {
         const name = mountain.name;
         const o = option(name)
