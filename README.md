@@ -20,7 +20,9 @@ The mountain page includes a drop down and lets you pick which mountain you want
 <img src="./images/MountainPage.PNG" alt="mtnPage">
 <img src="./images/MountainPage2.PNG" alt="mtnPageTwo">
 
+## Live Preview
 
+<a href="https://nataliyap1.github.io/capstone-2/">https://nataliyap1.github.io/capstone-2/</a>
 
 
 
