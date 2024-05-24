@@ -26,31 +26,6 @@ body {
 }
 
 
-
-/* off-screen-menu */
-.offScreenMenu {
-    background-color:  rgba(0, 0, 0, 0.836);
-    height: 100vh;
-    width: 100%;
-    max-width: 450px;
-    position: fixed;
-    top: 0;
-    right: -450px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;    
-    justify-content: center;
-    text-align: center;
-    font-size: 3rem;
-    transition: .3s ease;
-}
-.offScreenMenu.active {
-    right: 0;
-}
-
-
-
-/* nav */
 nav {
     padding: 1rem;
     display: flex;
@@ -58,8 +33,8 @@ nav {
 }
 
 
-
 /* ham menu */
+
 .hamMenu {
     height: 50px;
     width: 40px;
@@ -98,6 +73,31 @@ nav {
     transform: translate(-50%, -50%) rotate(-45deg);
 }
 /*end of ham menu*/
+
+
+/* off-screen-menu */
+.offScreenMenu {
+    background-color:  rgba(0, 0, 0, 0.836);
+    height: 100vh;
+    width: 100%;
+    max-width: 450px;
+    position: fixed;
+    top: 0;
+    right: -450px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;
+    text-align: center;
+    font-size: 3rem;
+    transition: .3s ease;
+}
+.offScreenMenu.active {
+    right: 0;
+}
+
+
+/*end of off screen menu*/
 
   footer{
     background-color: rgba(44, 22, 22, 0.911);
