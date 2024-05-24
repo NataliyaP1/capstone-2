@@ -1,1 +1,2 @@
-# capstone-2
+# Capstone2
+## Home Page

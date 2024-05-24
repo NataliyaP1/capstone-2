@@ -1,4 +1,7 @@
 
+
+
+
 function getPark(park) {
     const element = document.createElement("div");
     element.classList.add("park");
@@ -6,25 +9,23 @@ function getPark(park) {
     element.innerHTML = `
 
     <br><hr><br>
-    <tr>
-    <th><b>Name:</b></th>
-    <td>${park.LocationName}</td>
+    
+    <b>Name:</b>
+    <p>${park.LocationName}<p>
 <br>
-<th><b>Location ID:</b></th>
-<td>${park.LocationID}</td>
+    <b>Location ID:</b>
+    <p>${park.LocationID}</p>
 <br>
-    <th><b> Address :</b></th>
-    <td>${park.Address},</td>
-    <td>${park.City},</td>
-    <td>${park.State}</td>
+    <b>Address :</b>
+    <p>${park.Address}, ${park.City}, ${park.State}</p>
  <br>   
-    <th><b>Phone: </b></th>
-    <td>${park.Phone}</td>
+    <b>Phone: </b>
+    <p>${park.Phone}</p>
 
     </tr>
     
     `;
-    if(park.hasOwnProperty("Visit")){
+    if (park.hasOwnProperty("Visit")) {
         const link = park.Visit;
         const text = park.LocationName;
         element.innerHTML += `
@@ -32,9 +33,10 @@ function getPark(park) {
         `;
     };
     return element;
+
 }
 
-    document.addEventListener("DOMContentLoaded", ()=>{
+document.addEventListener("DOMContentLoaded", () => {
 
 
     function showResults() {
@@ -50,24 +52,19 @@ function getPark(park) {
                 )
             )
         }
-        results.innerHTML = ""; 
+        results.innerHTML = "";
         filtered.forEach(p => results.appendChild(getPark(p)));
+
+        if(filtered.lenght==0){
+            results = "No Results"
+        }
+
+        
     }
+
     locations.addEventListener("change", showResults);
     parkType.addEventListener("change", showResults);
 
-    function handleSearchBy(e) {
-        if (locationRadio.checked) {
-            locationLabel.style.display = "block";
-            parkTypeLabel.style.display = "none";
-        } else {
-            locationLabel.style.display = "none";
-            parkTypeLabel.style.display = "block";
-        }
-        showResults();
-    }
-    locationRadio.addEventListener("click", handleSearchBy)
-    parkTypeRadio.addEventListener("click", handleSearchBy)
 
     locationsArray
         .map(option)
@@ -76,6 +73,11 @@ function getPark(park) {
     parkTypesArray
         .map(option)
         .forEach(pto => parkType.appendChild(pto));
-    });
+
+
+});
+
+
+
 
 
